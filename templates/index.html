@@ -7,11 +7,11 @@
  	<title></title>
 	<meta name="description" content="Equipotential Simulator- McGill Physics Hackathon 2017">
 	<!--<link rel=icon href='favicon.ico'>-->
- 	<link type="text/css" rel="stylesheet" href="static/css/index.css" media="screen, projection">
+ 	<link type="text/css" rel="stylesheet" href="../static/css/index.css" media="screen, projection">
 
-	<script src="static/js/jquery-1.4.2.min.js"></script>
-	<!--<script type="text/javascript" src="./scripts/canvas.js"></script>-->
-	<script src="static/js/index.js"></script>
+	<script type="text/javascript" src="../static/js/jquery-1.4.2.min.js"></script>
+
+	<script type="text/javascript" src="../static/js/index.js"></script>
 </head>
 
 <body>
@@ -44,7 +44,6 @@
 		<p style="font-size: 8px;"> Y-Position: <span id="zp9"></span></p>
 	</div>
 	<button class="button" onclick="uponClear()">Clear</button>
-	
 	<form action="updateScheme()" name="myForm">
 	    Scheme:<select id="colours" name="colours">
 		    <option value="viridis">Viridis</option>
@@ -58,16 +57,18 @@
 		    <option value="gistheat">Gist Heat</option>
 		    <option value="jet">Jet</option>
 		</select>
+	<button class="button" type="submit">Generate</button> 
 	</form>
 </div>
 <div id="graph">
+<img src="../v.png" id="myImage">
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p style="font-family: Verdana;">With this project, we are attempting to simulate equipotential fields of charged particles. You can specify a maximum of three <br> particles and their charges (in the range of [-10,10]) as well as their x, y coordinates in a 2D plane, with the origin (0,0) being <br> in the centre and (100,100) and (-100,-100) defining the top right and bottom left corners respectively. You can also specify the <br> matplotlib theme from a selected list. The plot is generated using matplotlib and displayed with Javascript. </p>
 <p>Authors: <br>
-<a href="https://github.com/Vall-1996"> <img src="static/git.png" style="width:20px;height:20px;"></a> Valérie Desharnais <br>
-<a href="https://github.com/pf-physics"> <img src="static/git.png" style="width:20px;height:20px;"></a> Sacha Perry-Fagant <br>
-<a href="https://github.com/mjip"> <img src="static/git.png" style="width:20px;height:20px;"></a> Marie Payne </p>
+<a href="https://github.com/Vall-1996"> <img src="git.png" style="width:20px;height:20px;"></a> Valérie Desharnais <br>
+<a href="https://github.com/pf-physics"> <img src="git.png" style="width:20px;height:20px;"></a> Sacha Perry-Fagant <br>
+<a href="https://github.com/mjip"> <img src="git.png" style="width:20px;height:20px;"></a> Marie Payne </p>
 
 </body>
 </html>
