@@ -50,7 +50,6 @@ $(document).ready(function(){
 	    output3.innerHTML = this.value;
 	    p1y = this.value;
 	    flag = false;
-	    update();
 	} 
 
 	var slider4 = document.getElementById("z2");
